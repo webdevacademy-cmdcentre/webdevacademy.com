@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | WebDev Academy</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Black background */
+            color: #FFD700; /* Gold text */
+            overflow-x: hidden; /* Disable horizontal scrolling */
+        }
+        header {
+            background-color: #222; /* Darker background for header */
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #FFD700; /* Gold links */
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+            position: relative; /* for absolute positioning of stars */
+            z-index: 1;
+            min-height: 100vh; /* Ensure container takes at least full viewport height */
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #222; /* Darker background for footer */
+            color: #FFD700;
+            position: relative; /* Adjust footer position */
+            z-index: 1;
+        }
+        .stars {
+            position: fixed; /* Fixed position to stay in viewport */
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            background: transparent;
+            overflow: hidden; /* Prevent overflow */
+        }
+        .stars div {
+            width: 2px;
+            height: 2px;
+            background: #fff;
+            border-radius: 50%;
+            position: absolute;
+            animation: star-blink 2s infinite ease-in-out;
+        }
+        @keyframes star-blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WebDev Academy</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="stars">
+        <div style="top: 10%; left: 15%; animation-duration: 2s;"></div>
+        <div style="top: 20%; left: 40%; animation-duration: 3s;"></div>
+        <div style="top: 30%; left: 70%; animation-duration: 1.5s;"></div>
+        <div style="top: 40%; left: 50%; animation-duration: 2.5s;"></div>
+        <div style="top: 50%; left: 30%; animation-duration: 2s;"></div>
+        <div style="top: 60%; left: 60%; animation-duration: 3s;"></div>
+        <div style="top: 70%; left: 20%; animation-duration: 1.5s;"></div>
+        <div style="top: 80%; left: 80%; animation-duration: 2s;"></div>
+        <div style="top: 90%; left: 25%; animation-duration: 2.5s;"></div>
+    </div>
+    <div class="container">
+        <section id="about" class="content">
+            <h2>About the HTML & CSS Course</h2>
+            <p>Welcome to the WebDev Academy's HTML & CSS Course. Our mission is to provide top-notch education in web development, focusing on the foundational languages of the web: HTML and CSS. This course is designed to equip you with the skills necessary to create stunning, responsive websites that look great on any device.</p>
+            <p>In this course, you'll learn:</p>
+            <ul>
+                <li>The basics of HTML, including how to structure your web pages using elements and attributes.</li>
+                <li>How to use CSS to style your web pages, including layouts, colors, fonts, and more.</li>
+                <li>Responsive design principles to ensure your websites work well on mobile devices, tablets, and desktops.</li>
+                <li>Best practices for web development to create clean, maintainable code.</li>
+            </ul>
+            <p>Upon completion of the course, you'll receive a certificate of achievement. This certificate can be a valuable addition to your resume, showcasing your skills to potential employers and helping you stand out in the competitive field of web development. Many of our students have used this certificate to advance their careers, secure promotions, or start new jobs in the tech industry.</p>
+            <h2>Student Experiences</h2>
+            <p>Our students love the HTML & CSS Course at WebDev Academy. Here are some of their experiences:</p>
+            <blockquote>
+                <p>"This course was exactly what I needed to start my career in web development. The lessons were clear, and the projects were really helpful in applying what I learned." - <strong>Sarah T.</strong></p>
+            </blockquote>
+            <blockquote>
+                <p>"I appreciated the depth of the course. It covered everything from the basics to more advanced topics, and the instructors were always available to help." - <strong>James L.</strong></p>
+            </blockquote>
+            <blockquote>
+                <p>"Getting my certificate from WebDev Academy gave me the confidence to apply for web development positions. I'm now working as a front-end developer, thanks to this course!" - <strong>Emily R.</strong></p>
+            </blockquote>
+        </section>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 WebDev Academy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
